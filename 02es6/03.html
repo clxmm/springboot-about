@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 解构赋值
+        const couse = {
+            name: 'el6',
+            price: 500,
+            teacher: {
+                name: 'clx',
+                age: 12
+            }
+        }
+
+        const { name:clxname, price, teacher: { age } } = couse;
+        console.log(clxname, price, age)
+
+
+
+
+        const array = ['es1', 'es2', 'es3'];
+        const [a, b, c] = array;
+        console.log(a, b, c);
+
+
+        // 作为函数的参数
+        const foo = ({name,age,schoole='xxx学校'}) => {
+            console.log(name,age,schoole)
+        }
+
+        foo({
+            name: '张三',
+            age:1,
+            // schoole: "dd"
+        })
+
+        // 作为函数的返回值
+        const foo1 = () => {
+            return {
+                name1: '张三',
+                age1: 1
+            }
+        }
+        const {name1,age1} = foo1();
+        console.log(name1,age1)
+
+        
+
+
+    </script>
+
+</body>
+
+</html>
