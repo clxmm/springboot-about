@@ -8,10 +8,10 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.macro.cloud</groupId>
-    <artifactId>admin-server</artifactId>
+    <groupId>org.clxmm</groupId>
+    <artifactId>005springboot_admin-security-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>admin-server</name>
+    <name>005springboot_admin-security-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -21,8 +21,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
@@ -30,16 +30,21 @@
             <version>2.1.5</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
+
+
+
     </dependencies>
+
+
 
     <dependencyManagement>
         <dependencies>

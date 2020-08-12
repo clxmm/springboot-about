@@ -1,4 +1,4 @@
-package org.clxmm.springbootadmin;
+package org.clxmm.springbootadminclient;
 
 
 import org.springframework.boot.test.context.SpringBootTest;

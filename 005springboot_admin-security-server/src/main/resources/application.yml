@@ -1,0 +1,23 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: admin-security-service
+  # 配置登录的用户名与密码
+  security:
+    user:
+      name: clx
+      password: 123456
+  # 不显示admin-security-server的监控信息
+  boot:
+    admin:
+      discovery:
+        ignored-services: ${spring.application.name}
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+
