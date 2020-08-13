@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: error
+    org.clxmm.springbotlogging.controller: debug
+  file:
+    name: logs/hello.log.log
+    max-size: 20kb
+    clean-history-on-start: true
